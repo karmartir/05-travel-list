@@ -8,7 +8,6 @@ const Form = ({ items, setItems, onAddItems }) => {
     event.preventDefault();
     if (description) {
       const newItem = { description, quantity, packed: false, id: Date.now() };
-      console.log(newItem);
       onAddItems(newItem);
       setDescription("");
       setQuantity(1);

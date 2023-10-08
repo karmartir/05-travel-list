@@ -2,7 +2,7 @@ import React from "react";
 
 const Item = ({ item, onDeleteItem, onComplete }) => {
   return (
-    <li>
+    <>
       <input
         type="checkbox"
         value={item.packed}
@@ -12,7 +12,7 @@ const Item = ({ item, onDeleteItem, onComplete }) => {
         {item.quantity} {item.description}
       </span>
       <button onClick={() => onDeleteItem(item.id)}>❌</button>
-    </li>
+    </>
   );
 };
 
